@@ -1,3 +1,4 @@
+#Load required library
 library(ggplot2)
 library(readr)
 install.packages("plotly")
@@ -6,6 +7,7 @@ library(ggrepel)
 library(plotly)
 install.packages("ggsci")
 library(ggsci)
+#Set working directory for importing file.
 setwd("/home/chrf/KPN_R_Code")
 data<- read_csv("convergence_scatter__res_0-3_vir_0-5.csv",na="NA")
 View(data)
